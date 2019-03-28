@@ -1,0 +1,91 @@
+/* Importing font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
+
+/**********************************/
+/* Styling the body */
+body {
+    margin-top: 56px;
+    font-family: 'Oxygen', sans-serif;
+    color: #505962;
+    background-color: rgba(30, 160, 187,0.4);
+}
+
+/**********************************/
+/* Setting up the Projects second navigation bar */
+nav#navigationBarProjects {
+    margin-top: 40px;
+}
+nav#navigationBarProjects + div {
+    margin-top: 93px;
+}
+@media (max-width: 767px) {
+    nav#navigationBarProjects + div {
+        margin-top: 0;
+    }
+    nav#navigationBarProjects {
+        display: none;
+    }
+}
+/* Styling the navigation bars */
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9em;
+    letter-spacing: .1em;
+}
+.navbar-brand {
+    padding-right: 0.2em;
+    color: #FFFFFF;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #1ea0bb;
+}
+.navbar-dark .navbar-nav .nav-item .active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFFFFF;
+}
+
+/**********************************/
+/* General for the pages */
+.jumbotron {
+    background-color: #1ea0bb;
+    color: #FFFFFF;
+}
+a.textAnchor {
+    color: #fff;
+}
+
+/**********************************/
+/* Project Page */
+.projectSession {
+    padding-top: 105px;
+    margin-top: -105px;
+    background-color: transparent;
+}
+.projectSession > div {
+    /* padding-bottom: 25px; */
+    margin-bottom: 25px;
+}
+/**********************************/
+/* Contact Page */
+#contactForm {
+    width: 800px;
+}
+/**********************************/
+/* About Page */
+img#aboutProfilePhoto {
+    width: 190px;
+    height: 190px;
+}
+@media (max-width: 767px) {
+    img#aboutProfilePhoto {
+        width: 150px;
+        height: 150px;
+    }
+
+/* comment */
+
+/* comment */
+/* comment */
+/* comment */
+

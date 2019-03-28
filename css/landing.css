@@ -1,0 +1,122 @@
+body {
+    background-color: #000;
+}
+
+#landingHeader {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    padding-top: 5vh;
+    background-color: rgba(30, 160, 187,0.4);
+    border: transparent;
+    border-radius: 0 0 150px 150px;
+    width: 70%;
+    margin: 0 auto;
+}
+@media (max-width: 1200px) {
+    #landingHeader {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    #landingHeader {
+        width: 90%;
+    }
+}
+#landingHeader > .container {
+    max-width: 60%;
+}
+#landingHeader h1 {
+    font-size: 3.5em;
+}
+#landingHeader p {
+    font-size: 1.2em;
+}
+#landingProfilePhoto {
+    max-width: 90px;
+    max-height: 90px;
+}
+.socialMediaIcon {
+    font-size: 2.2em;
+    color: #1ea0bb;
+    padding: 0 8px;
+}
+.btn {
+    color: #FFFFFF;
+}
+.btn:hover {
+    //color: #FFFFFF;
+    color: #1ea0bb;
+    background-color: rgba(250, 250, 250, 1);
+}
+
+.slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 15s linear infinite; 
+}
+
+.slideshow li#background1 { 
+    background-image: url(../img/landingPageBackground1.jpg);
+}
+.slideshow li#background2 { 
+    background-image: url(../img/landingPageBackground2.jpg);
+    animation-delay: 5s; 
+}
+.slideshow li#background3 { 
+    background-image: url(../img/landingPageBackground3.jpg);
+    animation-delay: 10s; 
+}
+
+@keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    30% {
+      opacity: 1
+    }
+    50% {
+      opacity: 0
+    }
+  
+    /* 0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    10% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    20% {
+      opacity: 1
+    }
+    30% {
+      opacity: 0
+    } */
+}
