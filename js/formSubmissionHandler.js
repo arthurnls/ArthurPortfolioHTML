@@ -103,7 +103,8 @@
         }).join('&');
         xhr.send(encoded);
         setTimeout(function(){
-            form.querySelector(".thankyou_message").style.display = "none";
+            //form.querySelector(".thankyou_message").style.display = "none";
+            location.reload();
         },5000);
     }
     }
