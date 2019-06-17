@@ -58,13 +58,22 @@ a.textAnchor {
 /**********************************/
 /* Project Page */
 .projectSession {
-    padding-top: 105px;
-    margin-top: -105px;
-    background-color: transparent;
+    display: inline-block;
 }
+
 .projectSession > div {
-    /* padding-bottom: 25px; */
-    margin-bottom: 25px;
+    /* padding-bottom: 45px; */
+    margin-bottom: 45px;
+}
+.projectSession:target {
+    margin-top: -113px;
+    padding-top: 113px;
+}
+@media (max-width: 767px) {
+    .projectSession {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
 }
 /**********************************/
 /* Contact Page */

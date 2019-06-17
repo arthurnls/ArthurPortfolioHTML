@@ -1,94 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arthur Saraiva Projects</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body id="projectsBody" data-spy="scroll" data-target="#navbarResponsive2">
-    <!-- Navigation Bar -->
-    <nav id="navigationBar">
-    </nav>
-    <!-- End Navigation Bar -->
-    <!-- Navigation Bar -->
-    <nav id="navigationBarProjects" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <div class="navbar-nav mx-auto">
-            <!-- <div class="d-flex flex-nowrap">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Arthur Saraiva Projects</title>
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <!-- Font Awesome CSS -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+            crossorigin="anonymous"
+        />
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/index.css" />
+    </head>
+    <body
+        id="projectsBody"
+        data-spy="scroll"
+        data-target="#navbarResponsive2"
+        data-offset="193"
+    >
+        <!-- Navigation Bar -->
+        <nav id="navigationBar"></nav>
+        <!-- End Navigation Bar -->
+        <!-- Navigation Bar -->
+        <nav
+            id="navigationBarProjects"
+            class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"
+        >
+            <div class="navbar-nav mx-auto">
+                <!-- <div class="d-flex flex-nowrap">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive2">
                     <span><span class="navbar-toggler-icon"></span> Projects</span>
                 </button>
             </div> -->
-        
-            <div class="collapse navbar-collapse" id="navbarResponsive2">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a id="aboutNavLink" class="nav-link" href="#YelpCamp">Yelp Camp</a>
-                    </li>
-                    <li class="nav-item">
-                        <a id="projectsNavLink" class="nav-link" href="#ColorGame">Color Game</a>
-                    </li>
-                </ul>
-            </div>
-        </div>                
-    </nav>
-    <!-- End Navigation Bar -->
 
-
-    <!-- Projects Title -->
-    <div class="jumbotron text-center">
-        <h1>Projects</h1>
-    </div>
-
-    <!-- Content Container -->
-    <div class="container">
-        <!-- Yelp Camp Session -->
-        <span class="projectSession">
-            <div class="row" id="YelpCamp">
-                <div class="col-md-6 col-lg-4">
-                    <img class="img-fluid" src="img/yelpCamp1.PNG" alt="">
+                <div class="collapse navbar-collapse" id="navbarResponsive2">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a
+                                class="nav-link projectLink"
+                                href="#BurgerBuilder"
+                                >Burger Builder</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link projectLink" href="#YelpCamp"
+                                >Yelp Camp</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link projectLink" href="#ColorGame"
+                                >Color Game</a
+                            >
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-6 col-lg-8">
-                    <h2>Yelp Camp</h2>
-                    <p>Yelp Camp was a web application I developed and deployed. Developed using HTML, CSS, JavaScript, Bootstrap 4, Git, MongoDB, Express and NodeJS. This project was initially developed during the Udemy course, and after finishing that, I started refactoring and adding new functionalities, such as using google maps API and searching.</p>
-                    <p>This is a work in progress, as I still have plans to add some other functionalities, such as user profiles and user ratings.</p>
-                    <p class="font-italic">You can use "<strong>test</strong>" as username and password for testing the application.</p>
-                    <div class="text-center">
-                        <a class="btn btn-primary" href="https://yelpcamp-arthur.herokuapp.com">Open Yelp Camp</a>
+            </div>
+        </nav>
+        <!-- End Navigation Bar -->
+
+        <!-- Projects Title -->
+        <div class="jumbotron text-center">
+            <h1>Projects</h1>
+        </div>
+
+        <!-- Content Container -->
+        <div class="container">
+            <!-- Burger Builder Session -->
+            <span class="projectSession" id="BurgerBuilder">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <img
+                            class="img-fluid"
+                            src="img/burgerBuilder1.PNG"
+                            alt="burger builder"
+                        />
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <h2>Burger Builder</h2>
+                        <p>
+                            Burger Builder is a web application I developed and
+                            deployed for practicing React. Developed using
+                            React, Redux, React Router. Features statefull and
+                            stateless components and containers, state
+                            management with Redux. Has user authentication and
+                            resource blocking for non-authorized users, forms
+                            and form validation. Handling http requests using
+                            axios.
+                        </p>
+                        <p class="font-italic">
+                            You can use "<strong>teste@teste.br</strong>" as
+                            username and "<strong>testes</strong>" as password,
+                            or create your own user, for testing the
+                            application.
+                        </p>
+                        <div class="text-center">
+                            <a
+                                class="btn btn-primary"
+                                href="https://burger-builder-saraiva.web.app/"
+                                >Open Burger Builder</a
+                            >
+                        </div>
                     </div>
                 </div>
-            </div>
-        </span>
+            </span>
 
-        <!-- Color Game Session -->
-        <span class="projectSession">
-            <div class="row" id="ColorGame">
-                <div class="col-md-6 col-lg-4">
-                    <img class="img-fluid" src="img/colorGame1.PNG" alt="">
-                </div>
-                <div class="col-md-6 col-lg-8">
-                    <h2>Color Game</h2>
-                    <p>Color Game was a very simple application that I created to test and practice my skills on basic HTML, CSS and JavaScript. The game generates 6 random colors, shows you one of those chosen randomly on RGB format, and the player tries to guess which of those colors is the right one.</p>
-                    <p>This application helped understand better the interaction of basic HTML, CSS and JavaScript. Using JavaScript to work with HTML elements and styling them and getting input from the user and changing the page.</p>
-                    <div class="text-center">
-                        <a class="btn btn-primary" href="Color Game/colorGame.html">Try Color Game</a>
+            <!-- Yelp Camp Session -->
+            <span class="projectSession" id="YelpCamp">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <img
+                            class="img-fluid"
+                            src="img/yelpCamp1.PNG"
+                            alt="Yelp Camp"
+                        />
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <h2>Yelp Camp</h2>
+                        <p>
+                            Yelp Camp is a web application I developed and
+                            deployed for practicing. Developed using HTML, CSS,
+                            JavaScript, Bootstrap 4, Git, MongoDB, Express and
+                            NodeJS. This project was initially developed during
+                            the Udemy course, and after finishing that, I
+                            started refactoring and adding new functionalities,
+                            such as using google maps API and searching.
+                        </p>
+                        <p class="font-italic">
+                            You can use "<strong>test</strong>" as username and
+                            password for testing the application.
+                        </p>
+                        <div class="text-center">
+                            <a
+                                class="btn btn-primary"
+                                href="https://yelpcamp-arthur.herokuapp.com"
+                                >Open Yelp Camp</a
+                            >
+                        </div>
                     </div>
                 </div>
-            </div>
-        </span>
-    </div>
+            </span>
 
+            <!-- Color Game Session -->
+            <span class="projectSession" id="ColorGame">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <img
+                            class="img-fluid"
+                            src="img/colorGame1.PNG"
+                            alt="Color Game"
+                        />
+                    </div>
+                    <div class="col-md-6 col-lg-8">
+                        <h2>Color Game</h2>
+                        <p>
+                            Color Game was a very simple application that I
+                            created to test and practice my skills on basic
+                            HTML, CSS and JavaScript. The game generates 6
+                            random colors, shows you one of those chosen
+                            randomly on RGB format, and the player tries to
+                            guess which of those colors is the right one.
+                        </p>
+                        <p>
+                            This application helped understand better the
+                            interaction of basic HTML, CSS and JavaScript. Using
+                            JavaScript to work with HTML elements and styling
+                            them and getting input from the user and changing
+                            the page.
+                        </p>
+                        <div class="text-center">
+                            <a
+                                class="btn btn-primary"
+                                href="Color Game/colorGame.html"
+                                >Try Color Game</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
 
-    <!-- Bootstrap Files -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- JavaScript File -->
-    <script src="js/navbar.js"></script>
-</body>
+        <!-- Bootstrap Files -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- JavaScript File -->
+        <script src="js/navbar.js"></script>
+    </body>
 </html>

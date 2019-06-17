@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", function() {
     `;
     // End of Navbar
 
-
     //document.querySelector("body").classList.contains()
     var bodyID = document.querySelector("body").id;
     if (bodyID == "aboutBody") {
@@ -49,6 +48,33 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("aboutNavLink").classList.remove("active");
         document.getElementById("projectsNavLink").classList.add("active");
         document.getElementById("contactNavLink").classList.remove("active");
+
+        // testing code
+        // Get the container element
+        const btnContainer = document.getElementById("navbarResponsive2");
+
+        // Get all buttons with class="btn" inside the container
+        const btns = btnContainer.getElementsByClassName("nav-link");
+
+        //var offsetHeight = 93;
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (let i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                let current = btnContainer.getElementsByClassName("active");
+
+                // If there's no active class
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(
+                        " active",
+                        ""
+                    );
+                }
+                // Add the active class to the current/clicked button
+                this.className += " active";
+            });
+        }
+        // end testing
     } else if (bodyID == "contactBody") {
         document.getElementById("homeNavLink").classList.remove("active");
         document.getElementById("aboutNavLink").classList.remove("active");
